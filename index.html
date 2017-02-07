@@ -11,7 +11,7 @@
   <button id="refresh">refresh</button>
   <div id="main0" style="width: 600px;height:400px;"></div>
   <script type="text/javascript">
-    var dom = document.getElementById('main' + i)
+    var dom = document.getElementById('main0')
     var chart = echarts.init(dom)
 
     chart.setOption(gen())
@@ -50,8 +50,8 @@
         dataZoom: [{
           show: true,
           type: 'slider',
-          start: 0,
-          end: 10,
+          start: 90,
+          end: 100,
         }]
       }
     }
